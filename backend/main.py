@@ -1,6 +1,9 @@
 from flask import Flask, render_template
+from api import test_bp
 
 app = Flask(__name__, static_folder='../frontend/dist/static', template_folder='../frontend/dist')
+
+app.register_blueprint(test_bp)
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
