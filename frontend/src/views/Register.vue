@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: 'Register'
+  name: 'Register',
   data(){
     return {
       username: ""
@@ -30,10 +30,10 @@ export default {
   methods: {
     async sendRegister(){
       const res = await this.$axios.post(
-        '/auth/register'
+        '/auth/register',
         {
-          username: this.username,
-        }
+          username : this.username,
+        },
         this.test = res.data.body
       )
     }
