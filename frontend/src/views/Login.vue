@@ -9,8 +9,8 @@
         <v-text-field label="パスワード" />
         <v-card-actions>
       <v-btn>ログイン</v-btn>
-  </v-card-actions>
-</v-form>
+    </v-card-actions>
+      </v-form>
     </v-card-text>
   </v-card>
 </template>
