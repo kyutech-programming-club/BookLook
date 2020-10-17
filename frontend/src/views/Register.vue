@@ -34,8 +34,8 @@ export default {
         {
           username : this.username,
         },
-        this.test = res.data.body
       )
+      this.test = res.data.body
     }
   }
 }
