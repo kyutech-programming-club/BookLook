@@ -12,8 +12,8 @@
           v-model="pass"
           label="パスワード" />
         <v-card-actions>
-      <v-btn @click="sendRegister">登録</v-btn>
-    </v-card-actions>
+          <v-btn @click="sendRegister">登録</v-btn>
+        </v-card-actions>
       </v-form>
     </v-card-text>
   </v-card>
