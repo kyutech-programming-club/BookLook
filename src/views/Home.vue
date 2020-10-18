@@ -1,13 +1,15 @@
 <template>
   <v-app>
     <v-content>
+      <HelloWorld/>
       <v-container>
-        <v-layout wrap>
-          <v-flex xs12 sm6 md4 text-center my-5><v-btn>書籍一覧</v-btn></v-flex>
-          <v-flex xs12 sm6 md4 text-center my-5><v-btn>本の登録</v-btn></v-flex>
-       </v-layout>
+        <v-row class="text-center">
+          <v-col class="mb-4">
+            <v-flex my-5><v-btn >書籍一覧</v-btn></v-flex>
+            <v-flex my-5><v-btn to="/search">本の登録</v-btn></v-flex>
+          </v-col>
+        </v-row>
       </v-container>
-      <HelloWorld msg="Welcome to Your Vue.js App"/>
     </v-content>
   </v-app>
 </template>
