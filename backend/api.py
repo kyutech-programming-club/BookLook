@@ -21,11 +21,13 @@ class Test(Resource):
         # books_dict = [books.to_dict() for book in books]
         print(books)
         books_dict = {
-            {
-                'title': "book1"
-            },
-            {
-                'title': "book2"
+            'books':{
+                {
+                    'title': "book1"
+                },
+                {
+                    'title': "book2"
+                }
             }
         }
         return jsonify(books_dicts)
