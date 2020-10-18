@@ -28,7 +28,8 @@
       async sendApi() {
         const res = await this.$axios.post(
           '/api/test',
-          { name: this.text }
+          { title: "test1",
+            cover: "test1.png" }
           )
         this.text = res.data.body
       }
