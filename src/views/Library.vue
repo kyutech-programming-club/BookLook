@@ -16,6 +16,9 @@ export default {
       books: null
     }
   },
+  created(){
+    this.getBooks()
+  },
   methods:{
     getBooks() {
       const res = this.$axios.get(
