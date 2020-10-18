@@ -18,8 +18,16 @@ class Test(Resource):
 
     def get(self):
         books = get_all()
-        books_dict = [books.to_dict() for book in books]
-        console.log(books_dict)
+        # books_dict = [books.to_dict() for book in books]
+        console.log(books)
+        books_dict = {
+            {
+                'title': "book1"
+            },
+            {
+                'title': "book2"
+            }
+        }
         return jsonify(books_dicts)
     
 
