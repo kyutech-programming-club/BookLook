@@ -49,11 +49,12 @@ export default {
       
       // console.log("speechText: " + speechText);
     },
-    async postApi() {
-      await this.$axios.post('/api/book_register',{
-        title: this.bookTitle
-      }
-      )
+    async sendApi() {
+      const res = await this.$axios.post(
+        '/api/test',
+        { title: this.bookTitle, 
+          cover: this.bookUrl}
+        )
       console.log(this.bookTitle)
     }
   }
