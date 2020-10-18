@@ -19,7 +19,7 @@ class Test(Resource):
     def get(self):
         books = get_all()
         # books_dict = [books.to_dict() for book in books]
-        console.log(books)
+        print(books)
         books_dict = {
             {
                 'title': "book1"
