@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import axios from "axios"
+import axios from "axios";
 export default {
   data(){
     return{
@@ -22,8 +22,8 @@ export default {
   },
   methods:{
     getBooks() {
-      const res = this.$axios.get(
-        '/api/test'
+      const res = axios.get(
+        'https://proken-booklook.herokuapp.com/api/test'
       )
       this.books = res.data
       console.log(this.books)
