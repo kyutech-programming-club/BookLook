@@ -50,10 +50,10 @@ export default {
       // console.log("speechText: " + speechText);
     },
     async postApi() {
-      const result = await this.$axios.post('/api/book_register',{
+      await this.$axios.post('/api/book_register',{
         title: this.bookTitle
       }
-      );
+      )
       console.log(this.bookTitle)
     }
   }
