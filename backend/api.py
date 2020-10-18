@@ -28,7 +28,7 @@ class Test(Resource):
                 'title': "book2"
             }
         }
-        return jsonify(books_dicts)
+        return jsonify(books_dict)
     
 
 test = Api(test_bp)
