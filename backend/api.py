@@ -10,7 +10,7 @@ class Test(Resource):
         input_data = request.json
 
         print(input_data)
-        result_data = {'body': "Hello, " + input_data['title']}
+        result_data = {'body': input_data['title'] + "を登録しました"}
 
         register_book(input_data['title'], input_data['cover'])
 
