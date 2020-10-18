@@ -2,7 +2,7 @@
   <div>
     <h2>書籍一覧</h2>
     <ul id="example-1">
-      <li v-for="item in items" :key="item.message">
+      <li v-for="item in books" :key="item.title">
         {{ item.title }}
       </li>
     </ul>
@@ -13,18 +13,18 @@
 export default {
   data(){
     return{
-      items: [
-        { title: 'hogehoge' },
-        { title: 'ahiahi' }
-      ]
+      books: null
     }
   },
-  // methods:{
-  //   async getLib(){
-  //     const url = "/database";
-  //     const res = await axios.get(url);
-      
-  //   }
-  // }
+  methods:{
+    getBooks() {
+      const res = this.$axios.get(
+        '/api/test'
+      )
+      this.books = res.data
+      console.log(this.books)
+    }
+  }
 }
+
 </script>

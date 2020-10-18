@@ -15,3 +15,7 @@ def register_book(title, cover):
     reg = Book(title, cover)
     db.session.add(reg)
     db.session.commit()
+
+def get_all():
+    books = db.session.query(Book).all()
+    return books

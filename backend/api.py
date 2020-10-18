@@ -16,5 +16,12 @@ class Test(Resource):
 
         return jsonify(result_data)
 
+    def get(self):
+        books = get_all()
+        books_dict = [books.to_dict() for book in books]
+        console.log(books_dict)
+        return jsonify(books_dicts)
+    
+
 test = Api(test_bp)
 test.add_resource(Test, '')
