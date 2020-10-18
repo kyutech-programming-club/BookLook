@@ -19,12 +19,12 @@ export default {
       ]
     }
   },
-  methods:{
-    async getLib(){
-      const url = "/database";
-      const res = await axios.get(url);
+  // methods:{
+  //   async getLib(){
+  //     const url = "/database";
+  //     const res = await axios.get(url);
       
-    }
-  }
+  //   }
+  // }
 }
 </script>
