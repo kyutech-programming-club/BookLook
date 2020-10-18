@@ -21,6 +21,7 @@
     <v-btn
       @click="sendApi"
     >書籍登録</v-btn>
+    <h1>{{ text }}</h1>
   </div>
 </template>
 
@@ -31,7 +32,8 @@ export default {
     return{
       isbn: null,
       bookUrl: null,
-      bookTitle: null
+      bookTitle: null,
+      text: ""
     }
   },
   methods: {
@@ -55,6 +57,7 @@ export default {
         { title: this.bookTitle, 
           cover: this.bookUrl}
         )
+        this.text = res.data.body
       console.log(this.bookTitle)
     }
   }
