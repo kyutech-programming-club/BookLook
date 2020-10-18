@@ -23,5 +23,5 @@ def register_book(title, cover):
     db.session.commit()
 
 def get_all():
-    books = db.session.query(Book).all()
+    books = Book.query.all()
     return books
