@@ -19,7 +19,7 @@
     </div>
     <h2>{{ bookTitle }}</h2>
     <v-btn
-      @click="postApi"
+      @click="sendApi"
     >書籍登録</v-btn>
   </div>
 </template>
