@@ -11,6 +11,12 @@ class Book(db.Model):
         self.title = title
         self.cover = cover
 
+    def to_dict(self):
+        return dict(
+            title = self.title,
+            cover = self.cover
+        )
+
 def register_book(title, cover):
     reg = Book(title, cover)
     db.session.add(reg)
