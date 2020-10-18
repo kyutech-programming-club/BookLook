@@ -3,8 +3,6 @@
     <v-content>
       <v-container>
         <v-layout wrap>
-          <v-flex xs12 sm6 md4 text-center my-5><v-btn to="/register">Register</v-btn></v-flex>
-          <v-flex xs12 sm6 md4 text-center my-5><v-btn to="/Login">Login</v-btn></v-flex>
           <v-flex xs12 sm6 md4 text-center my-5><v-btn>書籍一覧</v-btn></v-flex>
           <v-flex xs12 sm6 md4 text-center my-5><v-btn>本の登録</v-btn></v-flex>
        </v-layout>
