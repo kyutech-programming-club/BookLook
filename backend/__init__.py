@@ -18,4 +18,3 @@ def index(path):
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, '../dist/static/img'), 'favicon.ico', )
-
